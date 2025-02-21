@@ -26,7 +26,7 @@ type Palette struct {
 
 // Dark is the palette for a dark themed site.
 var Dark = Palette{
-	Name: "Dark",
+	Name: "dark",
 
 	Background: color.RGBA{R: 18, G: 18, B: 18, A: 255},
 	Contrast:   color.RGBA{R: 30, G: 30, B: 30, A: 255},
@@ -47,7 +47,7 @@ var Dark = Palette{
 
 // Light is the palette for a light themed site.
 var Light = Palette{
-	Name: "Light",
+	Name: "light",
 
 	Background: color.RGBA{R: 245, G: 245, B: 245, A: 255},
 	Contrast:   color.RGBA{R: 235, G: 235, B: 235, A: 255},
