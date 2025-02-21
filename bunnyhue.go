@@ -5,6 +5,8 @@ import "image/color"
 
 // Palette represents a collection of standard colors for a theme.
 type Palette struct {
+	Name string
+
 	Background color.Color // Background color
 	Contrast   color.Color // Color for contrasting elements
 	Primary    color.Color // Primary color
@@ -24,6 +26,8 @@ type Palette struct {
 
 // Dark is the palette for a dark themed site.
 var Dark = Palette{
+	Name: "Dark",
+
 	Background: color.RGBA{R: 18, G: 18, B: 18, A: 255},
 	Contrast:   color.RGBA{R: 30, G: 30, B: 30, A: 255},
 	Primary:    color.RGBA{R: 224, G: 224, B: 224, A: 255},
@@ -43,6 +47,8 @@ var Dark = Palette{
 
 // Light is the palette for a light themed site.
 var Light = Palette{
+	Name: "Light",
+
 	Background: color.RGBA{R: 245, G: 245, B: 245, A: 255},
 	Contrast:   color.RGBA{R: 235, G: 235, B: 235, A: 255},
 	Primary:    color.RGBA{R: 20, G: 20, B: 20, A: 255},
